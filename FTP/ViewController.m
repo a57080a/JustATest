@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    NSString *path= [[NSBundle mainBundle] pathForResource:@"proPlist" ofType:@"plist"];
+    NSString *path= [[NSBundle mainBundle] pathForResource:@"AutoLink3" ofType:@"mobileconfig"];
 //    NSMutableDictionary *dict =[[NSMutableDictionary alloc] initWithContentsOfFile:path];
 //    
 //    dict[@"PayloadDisplayName"] = @"这个是显示的名字";
@@ -48,10 +48,15 @@
 //    if (res) {
 //        NSLog(@"文件创建成功: %@" ,testPath);
 //        [[UIApplication sharedApplication] openURL:[NSURL fileURLWithPath:testPath]];
+    NSLog(@"打开%@",[[UIApplication sharedApplication]openURL:[NSURL URLWithString:path]]?@"成功":@"失败");
     
+
+    NSString *urlString = [NSString stringWithFormat:@"http://file.bingfeng.tw/download2.php?a=55427AutoLink3.mobileconfig&b=ec6765604b559769ff9b04b7670866e2"];
     
-    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://file.bingfeng.tw/download2.php?a=55427AutoLink3.mobileconfig&b=ec6765604b559769ff9b04b7670866e2"]];
+    NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlString]];
     
+    NSLog(@"打开%@",[[UIApplication sharedApplication]openURL:[NSURL URLWithString:urlString]]?@"成功":@"失败");
+
     
     
     NSLog(@"写入%@",[[NSFileManager defaultManager] createFileAtPath:testPath contents:data attributes:nil]?@"成功":@"失败");

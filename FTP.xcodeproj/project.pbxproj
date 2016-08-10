@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F0478CA1D2CF75D0008B6FC /* proPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3F0478C91D2CF75D0008B6FC /* proPlist.plist */; };
+		3F3791D71D5B19BF00BDB66A /* AutoLink3.mobileconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3F3791D61D5B19BF00BDB66A /* AutoLink3.mobileconfig */; };
 		3FF898361CC285060045DADF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF898351CC285060045DADF /* main.m */; };
 		3FF898391CC285060045DADF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF898381CC285060045DADF /* AppDelegate.m */; };
 		3FF8983C1CC285060045DADF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FF8983B1CC285060045DADF /* ViewController.m */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		3F0478C91D2CF75D0008B6FC /* proPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = proPlist.plist; sourceTree = "<group>"; };
+		3F3791D61D5B19BF00BDB66A /* AutoLink3.mobileconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AutoLink3.mobileconfig; sourceTree = "<group>"; };
 		3FF898311CC285060045DADF /* FTP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FTP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FF898351CC285060045DADF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3FF898371CC285060045DADF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		3FF898331CC285060045DADF /* FTP */ = {
 			isa = PBXGroup;
 			children = (
+				3F3791D61D5B19BF00BDB66A /* AutoLink3.mobileconfig */,
 				3FF898371CC285060045DADF /* AppDelegate.h */,
 				3FF898381CC285060045DADF /* AppDelegate.m */,
 				3FF8983A1CC285060045DADF /* ViewController.h */,
@@ -151,6 +154,7 @@
 			files = (
 				3FF898441CC285060045DADF /* LaunchScreen.storyboard in Resources */,
 				3F0478CA1D2CF75D0008B6FC /* proPlist.plist in Resources */,
+				3F3791D71D5B19BF00BDB66A /* AutoLink3.mobileconfig in Resources */,
 				3FF898411CC285060045DADF /* Assets.xcassets in Resources */,
 				3FF8983F1CC285060045DADF /* Main.storyboard in Resources */,
 			);
